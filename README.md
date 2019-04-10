@@ -11,6 +11,8 @@ rplidar HomePage:   http://www.slamtec.com/en/Lidar
 
 rplidar Tutorial:  https://github.com/robopeak/rplidar_ros/wiki
 
+hector_slam: http://wiki.ros.org/hector_slam
+
 How to build rplidar ros package
 =====================================================================
     1) Clone this project to your catkin's workspace src folder
