@@ -5,14 +5,18 @@ notice : you should install hector-slam at first,  sudo apt-get install ros-indi
 E-mail: kint.zhao@slamtec.com
 
 This launch was modified by César Quiroz to run with RPLidar A1
+
 Ubuntu 16.04 Xenial
 ROS version: Kinetic
 E-mail: cesarhcq@gmail.com
 
+Read the wikipage of http://wiki.ros.org/hector_mapping
+See the "map_update_distance_thresh" it means that the close obstacles can be ignored by Lidar.
+
  -->
 <launch>
     <include file="$(find rplidar_ros)/launch/rplidar.launch" />
-    <node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="1 0 0 0 0 0 base_link laser 100" /> <!--change -->
+    <node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="0.1 0 0 0 0 0 base_link laser 100" /> <!--change -->
     <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rplidar_ros)/rviz/rplidar.rviz" />
 
     <node pkg="hector_mapping" type="hector_mapping" name="hector_height_mapping" output="screen">
