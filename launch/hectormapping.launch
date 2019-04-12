@@ -3,6 +3,12 @@ notice : you should install hector-slam at first,  sudo apt-get install ros-indi
            this launch just for test, you should improve the param for the best result.
 
 E-mail: kint.zhao@slamtec.com
+
+This launch was modified by César Quiroz to run with RPLidar A1
+Ubuntu 16.04 Xenial
+ROS version: Kinetic
+E-mail: cesarhcq@gmail.com
+
  -->
 <launch>
     <include file="$(find rplidar_ros)/launch/rplidar.launch" />
