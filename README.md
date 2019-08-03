@@ -1,3 +1,9 @@
+uPiRobot - An autonomous mobile robot based on Raspberry Pi 3 and Arduino
+=========================================================================
+
+The uPiRobot is an autonomous mobile robot that has been deployed by Acta Visio Company.
+
+
 RPLIDAR ROS package
 =====================================================================
 
@@ -56,3 +62,4 @@ RPLidar frame
 =====================================================================
 RPLidar frame must be broadcasted according to picture shown in
 rplidar-frame.png
+

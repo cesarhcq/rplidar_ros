@@ -6,11 +6,9 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
-        - /RPLidarLaserScan1
-        - /Map1
-        - /TF1
         - /TF1/Frames1
         - /TF1/Tree1
+        - /Path1
       Splitter Ratio: 0.5
     Tree Height: 813
   - Class: rviz/Selection
@@ -39,7 +37,7 @@ Visualization Manager:
     - Alpha: 0.5
       Cell Size: 1
       Class: rviz/Grid
-      Color: 160; 160; 164
+      Color: 85; 0; 255
       Enabled: true
       Line Style:
         Line Width: 0.0299999993
@@ -51,7 +49,7 @@ Visualization Manager:
         Y: 0
         Z: 0
       Plane: XY
-      Plane Cell Count: 10
+      Plane Cell Count: 50
       Reference Frame: <Fixed Frame>
       Value: true
     - Alpha: 1
@@ -69,15 +67,15 @@ Visualization Manager:
       Enabled: true
       Invert Rainbow: false
       Max Color: 255; 255; 255
-      Max Intensity: 4096
+      Max Intensity: 47
       Min Color: 0; 0; 0
-      Min Intensity: 0
+      Min Intensity: 47
       Name: RPLidarLaserScan
       Position Transformer: XYZ
-      Queue Size: 1000
+      Queue Size: 10
       Selectable: true
       Size (Pixels): 5
-      Size (m): 0.0299999993
+      Size (m): 0.0500000007
       Style: Squares
       Topic: /scan
       Unreliable: false
@@ -100,7 +98,7 @@ Visualization Manager:
       Frames:
         All Enabled: false
         base_link:
-          Value: true
+          Value: false
         laser:
           Value: true
         map:
@@ -120,6 +118,29 @@ Visualization Manager:
           scanmatcher_frame:
             {}
       Update Interval: 0
+      Value: true
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz/Path
+      Color: 25; 255; 0
+      Enabled: true
+      Head Diameter: 0.300000012
+      Head Length: 0.200000003
+      Length: 0.300000012
+      Line Style: Billboards
+      Line Width: 0.0399999991
+      Name: Path
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Pose Color: 255; 85; 255
+      Pose Style: None
+      Radius: 0.0299999993
+      Shaft Diameter: 0.100000001
+      Shaft Length: 0.100000001
+      Topic: /trajectory
+      Unreliable: false
       Value: true
   Enabled: true
   Global Options:
@@ -141,25 +162,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 15.9070377
+      Distance: 15.5682735
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -6.50582647
-        Y: -5.09984159
-        Z: 0.865391672
+        X: -2.7340281
+        Y: -6.08275747
+        Z: -2.37061882
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.140399456
+      Pitch: 0.55539906
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.815393448
+      Yaw: 1.50539279
     Saved: ~
 Window Geometry:
   Displays:
